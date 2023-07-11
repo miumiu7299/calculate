@@ -79,6 +79,7 @@ function calSum() {
     var arrAnswer = eval(arr.join(""));
     var strAnswer = parseFloat(arrAnswer).toPrecision(12);
     var answer = parseFloat(strAnswer);
+    answer = answer.toFixed(2);
     if(strAnswer==="NaN")
         answer="Error";
     updateShow(answer);
